@@ -14,8 +14,8 @@ public class AutorController {
         this.autorService = autorService;
     }
 
-    @PostMapping("/create")
-    public ResponseEntity<String> create(@RequestBody Autor autor) {
+    @PostMapping("/save")
+    public ResponseEntity<String> save(@RequestBody Autor autor) {
         autorService.save(autor);
         return ResponseEntity.ok("Autor salvo com sucesso");
     }
