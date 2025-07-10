@@ -1,8 +1,8 @@
-package dev.phquartin.springdockerfile.autor.service;
+package dev.phquartin.springdockerfile.local.autor.service;
 
-import dev.phquartin.springdockerfile.autor.model.Autor;
-import dev.phquartin.springdockerfile.autor.repository.AutorRepository;
-import dev.phquartin.springdockerfile.autor.validation.AutorValidation;
+import dev.phquartin.springdockerfile.local.autor.model.Autor;
+import dev.phquartin.springdockerfile.local.autor.repository.AutorRepository;
+import dev.phquartin.springdockerfile.local.autor.validation.AutorValidation;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 

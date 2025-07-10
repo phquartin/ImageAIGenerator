@@ -1,7 +1,7 @@
-package dev.phquartin.springdockerfile.autor.model;
+package dev.phquartin.springdockerfile.local.autor.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import dev.phquartin.springdockerfile.livro.model.Livro;
+import dev.phquartin.springdockerfile.local.livro.model.Livro;
 import jakarta.persistence.*;
 
 import java.util.List;

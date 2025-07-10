@@ -1,6 +1,6 @@
-package dev.phquartin.springdockerfile.livro.model;
+package dev.phquartin.springdockerfile.local.livro.model;
 
-import dev.phquartin.springdockerfile.autor.model.Autor;
+import dev.phquartin.springdockerfile.local.autor.model.Autor;
 import jakarta.persistence.*;
 
 @Entity

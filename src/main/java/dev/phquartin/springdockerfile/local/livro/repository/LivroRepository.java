@@ -1,6 +1,6 @@
-package dev.phquartin.springdockerfile.livro.repository;
+package dev.phquartin.springdockerfile.local.livro.repository;
 
-import dev.phquartin.springdockerfile.livro.model.Livro;
+import dev.phquartin.springdockerfile.local.livro.model.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

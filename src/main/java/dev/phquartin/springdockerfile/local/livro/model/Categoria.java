@@ -1,4 +1,4 @@
-package dev.phquartin.springdockerfile.livro.model;
+package dev.phquartin.springdockerfile.local.livro.model;
 
 public enum Categoria {
     ROMANCE("Romance"),

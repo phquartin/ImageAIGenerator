@@ -1,6 +1,6 @@
-package dev.phquartin.springdockerfile.autor.validation;
+package dev.phquartin.springdockerfile.local.autor.validation;
 
-import dev.phquartin.springdockerfile.autor.model.Autor;
+import dev.phquartin.springdockerfile.local.autor.model.Autor;
 
 public class AutorValidation {
     

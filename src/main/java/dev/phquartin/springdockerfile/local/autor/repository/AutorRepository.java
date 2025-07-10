@@ -1,6 +1,6 @@
-package dev.phquartin.springdockerfile.autor.repository;
+package dev.phquartin.springdockerfile.local.autor.repository;
 
-import dev.phquartin.springdockerfile.autor.model.Autor;
+import dev.phquartin.springdockerfile.local.autor.model.Autor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package dev.phquartin.springdockerfile.autor.controller;
+package dev.phquartin.springdockerfile.local.autor.controller;
 
-import dev.phquartin.springdockerfile.autor.model.Autor;
-import dev.phquartin.springdockerfile.autor.service.AutorService;
+import dev.phquartin.springdockerfile.local.autor.model.Autor;
+import dev.phquartin.springdockerfile.local.autor.service.AutorService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
