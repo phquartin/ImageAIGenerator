@@ -23,14 +23,23 @@ public class Livro {
     @Enumerated(EnumType.STRING)
     private Categoria categoria;
 
+    @Lob
+    @Column(name = "descricao", columnDefinition = "TEXT")
+    private String descricao;
+
+    @Column(name = "capa_url")
+    private String capaUrl;
+
     public Livro() {
     }
 
-    public Livro(Long id, String titulo, Autor autor, Categoria categoria) {
+    public Livro(Long id, String titulo, Autor autor, Categoria categoria, String descricao, String capaUrl) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.categoria = categoria;
+        this.descricao = descricao;
+        this.capaUrl = capaUrl;
     }
 
     public Long getId() {
@@ -63,5 +72,21 @@ public class Livro {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getCapaUrl() {
+        return capaUrl;
+    }
+
+    public void setCapaUrl(String capaUrl) {
+        this.capaUrl = capaUrl;
     }
 }
