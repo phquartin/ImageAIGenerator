@@ -5,6 +5,8 @@ import dev.phquartin.springdockerfile.local.autor.service.AutorService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/autor")
 public class AutorController {
@@ -21,7 +23,7 @@ public class AutorController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<Iterable<Autor>> findAll() {
+    public ResponseEntity<List<Autor>> findAll() {
         return ResponseEntity.ok(autorService.findAll());
     }
     @GetMapping("/id/{id}")

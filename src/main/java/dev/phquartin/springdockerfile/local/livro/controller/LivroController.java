@@ -4,6 +4,8 @@ import dev.phquartin.springdockerfile.local.livro.model.Livro;
 import dev.phquartin.springdockerfile.local.livro.service.LivroService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/livro")
 public class LivroController {
@@ -19,7 +21,7 @@ public class LivroController {
     }
 
     @GetMapping("/all")
-    public Iterable<Livro> findAll() {
+    public List<Livro> findAll() {
         return livroService.findAll();
     }
     @GetMapping("/id/{id}")
