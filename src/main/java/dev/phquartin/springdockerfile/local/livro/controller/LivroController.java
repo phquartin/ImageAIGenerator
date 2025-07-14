@@ -2,6 +2,7 @@ package dev.phquartin.springdockerfile.local.livro.controller;
 
 import dev.phquartin.springdockerfile.local.livro.model.Livro;
 import dev.phquartin.springdockerfile.local.livro.service.LivroService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,25 +17,27 @@ public class LivroController {
     }
 
     @PostMapping("/save")
-    public void save(@RequestBody Livro livro) {
+    public ResponseEntity<String> save(@RequestBody Livro livro) {
         livroService.save(livro);
+        return ResponseEntity.ok("Livro salvo com sucesso");
     }
 
     @GetMapping("/all")
-    public List<Livro> findAll() {
-        return livroService.findAll();
+    public ResponseEntity<List<Livro>> findAll() {
+        return ResponseEntity.ok(livroService.findAll());
     }
     @GetMapping("/id/{id}")
-    public Livro findById(@PathVariable Long id) {
-        return livroService.findById(id);
+    public ResponseEntity<Livro> findById(@PathVariable Long id) {
+        return ResponseEntity.ok(livroService.findById(id));
     }
     @GetMapping("/titulo/{titulo}")
-    public Livro findByTitulo(@PathVariable String titulo) {
-        return livroService.findByTitulo(titulo);
+    public ResponseEntity<Livro> findByTitulo(@PathVariable String titulo) {
+        return ResponseEntity.ok(livroService.findByTitulo(titulo));
     }
     @DeleteMapping("/delete/{id}")
-    public void delete(@PathVariable Long id) {
+    public ResponseEntity<String> delete(@PathVariable Long id) {
         livroService.deleteById(id);
+        return ResponseEntity.ok("Livro deletado com sucesso");
     }
 
 }
